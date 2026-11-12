@@ -33,3 +33,28 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.notice-text { color: #175cd3; }
+
+/* 连通性复检相关：结论标签、规则面板、登记表单、异常行高亮 */
+.tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; white-space: nowrap; }
+.tag-ok { background: #e7f6ec; color: #067647; border: 1px solid #abefc6; }
+.tag-bad { background: #fef3f2; color: #b42318; border: 1px solid #fda29b; }
+.tag-idle { background: #f2f4f7; color: #475467; border: 1px solid #d0d5dd; }
+.row-bad { background: #fffafa; }
+.row-bad td { background: #fffafa; }
+
+.rule-panel { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--brand); border-radius: 8px; padding: 10px 14px; margin-bottom: 12px; }
+.rule-panel strong { font-size: 13px; }
+.rule-list { margin: 8px 0 0; padding-left: 18px; color: #344054; font-size: 12px; line-height: 1.8; }
+
+.editor-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
+.editor-card h3 { margin: 0 0 12px; font-size: 14px; }
+.form-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 14px; }
+.form-grid label span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.form-grid input, .form-grid select { width: 100%; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+.form-actions { display: flex; gap: 8px; margin-top: 12px; }
+
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+.link:disabled { color: #98a2b3; }
+
+.filter-item select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
